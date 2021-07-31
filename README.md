@@ -140,6 +140,35 @@ for (let keys of iterKeys) {
 
 <img src="https://user-images.githubusercontent.com/22424891/127732990-0b1c0938-d5d2-4424-b25f-00c141b3d649.png" height="150px" />
 
+## DOMTokenList.forEach()
+
+### callback
+
+- 각 요소에 대해 실행할 함수, 결국 세 개의 인수:
+  - `currentValue`
+    - 배열에서 처리 중인 현재 요소이다.
+  - `currentIndex`
+    - 배열에서 처리 중인 현재 요소의 인덱스이다.
+  - `listObj`
+    - `forEach()` 적용 중인 배열이다.
+- `thisArg` 선택 과목
+  - `this` 실행할 때 사용할 값 `callback` 이다.
+
+```html
+<div class="classList      a    v    c">Class List</div>
+```
+
+```js
+const eventTarget = document.querySelector(".classList");
+const iterValues = eventTarget.classList.values();
+
+eventTarget.classList.forEach(function (value, key, listObj) {
+  console.log(`${value} ${key}/${this}/${listObj}  ++  `);
+}, "abcdefg");
+```
+
+<img src="https://user-images.githubusercontent.com/22424891/127733167-4509d71b-7bef-4a69-8420-40c757ed7ba8.png" height="150px" />
+
 ## 그외
 
 - DOMTokenList.supports(token) (Experimental)
