@@ -110,3 +110,26 @@ console.log(eventTarget.classList);
 ```
 
 <img src="https://user-images.githubusercontent.com/22424891/127732471-8f8cf3f7-a071-4120-9ddd-9f02338592d6.png" height="150px" />
+
+## DOMTokenList.entries()
+
+DOMTokenList.entries()는 iterator를 반환한다.
+
+```html
+<div class="classList      a    v    c">Class List</div>
+```
+
+```js
+const eventTarget = document.querySelector(".classList");
+const iter = eventTarget.classList.entries();
+
+for (let value of iter) {
+  console.log(value + "-!?!-");
+}
+```
+
+<img src="https://user-images.githubusercontent.com/22424891/127732886-a5d2c174-0de9-474a-84dd-90114561e2c9.png" height="150px" />
+
+## 그외
+
+- DOMTokenList.supports(token) (Experimental)
