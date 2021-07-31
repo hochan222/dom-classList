@@ -121,14 +121,24 @@ DOMTokenList.entries()는 iterator를 반환한다.
 
 ```js
 const eventTarget = document.querySelector(".classList");
-const iter = eventTarget.classList.entries();
+const iterEntries = eventTarget.classList.entries();
+const iterValues = eventTarget.classList.values();
+const iterKeys = eventTarget.classList.keys();
 
-for (let value of iter) {
-  console.log(value + "-!?!-");
+for (let Entries of iterEntries) {
+  console.log(Entries + "-entries-");
+}
+
+for (let values of iterValues) {
+  console.log(values + "-values-");
+}
+
+for (let keys of iterKeys) {
+  console.log(keys + "-keys-");
 }
 ```
 
-<img src="https://user-images.githubusercontent.com/22424891/127732886-a5d2c174-0de9-474a-84dd-90114561e2c9.png" height="150px" />
+<img src="https://user-images.githubusercontent.com/22424891/127732990-0b1c0938-d5d2-4424-b25f-00c141b3d649.png" height="150px" />
 
 ## 그외
 
