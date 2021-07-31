@@ -1,1 +1,1 @@
-console.log(document.querySelector('.classList').classList)
+console.log(document.querySelector(".classList").classList);
