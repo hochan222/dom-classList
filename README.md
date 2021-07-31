@@ -20,8 +20,8 @@ DOMTokenList.classList.length는 객체에 저장된 객체 수를 반환한다.
 
 <img src="https://user-images.githubusercontent.com/22424891/127732628-2a0c2abc-c6f5-4d27-b0cc-43f606da00bc.png" height="150px" />
 
-DOMTokenList는 읽기전용이다. 아래 메소드들을 이용해서 수정하자.
-
+- **DOMTokenList는 읽기전용이다. 아래 메소드들을 이용해서 수정하자.**
+- **DOMTokenList항상 대소문자를 구분한다.**
 ## DOMTokenList.add()
 
 add 메소드는 class 이름 사이의 공백을 제거해준다.
@@ -47,6 +47,9 @@ console.log(eventTarget.classList.contains("holee"));
 <img src="https://user-images.githubusercontent.com/22424891/127732079-65b7a5dd-bef3-4ff3-aaac-6104e2535d54.png" height="150px" />
 
 ## DOMTokenList.item()
+
+- 반환할 항목의 인덱스를 나타내는 32비트 부호 없는 정수(Number)이다.
+- length 숫자가 목록보다 크거나 같으면 null을 반환한다.
 
 ```html
 <div class="classList      a    v    c">Class List</div>
@@ -79,7 +82,10 @@ console.log(eventTarget.classList);
 
 ## DOMTokenList.toggle()
 
-toggle 메소드는 또한 class 이름 사이의 공백을 제거해준다.
+- toggle 메소드는 또한 class 이름 사이의 공백을 제거해준다.
+- 단방향 toggle도 옵션을 추가해서 만들어 줄 수 있다.
+  - false: token이 지워지기만 한다.
+  - true: token이 추가되기만 한다.
 
 ```html
 <div class="classList      a    v    c">Class List</div>
