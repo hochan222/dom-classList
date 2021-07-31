@@ -111,9 +111,9 @@ console.log(eventTarget.classList);
 
 <img src="https://user-images.githubusercontent.com/22424891/127732471-8f8cf3f7-a071-4120-9ddd-9f02338592d6.png" height="150px" />
 
-## DOMTokenList.entries()
+## DOMTokenList.entries(), DOMTokenList.values(), DOMTokenList.keys()
 
-DOMTokenList.entries()는 iterator를 반환한다.
+DOMTokenList.entries(), DOMTokenList.values(), DOMTokenList.keys()는 iterator를 반환한다.
 
 ```html
 <div class="classList      a    v    c">Class List</div>
