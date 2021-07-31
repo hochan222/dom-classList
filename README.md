@@ -62,3 +62,23 @@ console.log(eventTarget.classList);
 ```
 
 <img src="https://user-images.githubusercontent.com/22424891/127732341-2a48a7af-ef45-49d6-90f4-d46f480d276d.png" height="150px" />
+
+## DOMTokenList.toggle()
+
+toggle 메소드는 또한 class 이름 사이의 공백을 제거해준다.
+
+```html
+<div class="classList      a    v    c">Class List</div>
+```
+
+```js
+const eventTarget = document.querySelector(".classList");
+
+console.log(eventTarget.classList);
+console.log(eventTarget.classList.toggle('holee'));
+console.log(eventTarget.classList);
+console.log(eventTarget.classList.toggle('holee'));
+console.log(eventTarget.classList);
+```
+
+<img src="https://user-images.githubusercontent.com/22424891/127732421-bc1882ca-b65c-43ef-a6c9-6242745d5a5a.png" height="150px" />
