@@ -47,3 +47,18 @@ console.log(classes.item(classes.length - 1));
 
 <img src="https://user-images.githubusercontent.com/22424891/127732249-0a61da17-3085-4641-a60d-2e30ffc47ddb.png" height="150px" />
 
+## DOMTokenList.remove()
+
+```html
+<div class="classList      a    v    c">Class List</div>
+```
+
+```js
+const eventTarget = document.querySelector(".classList");
+
+console.log(eventTarget.classList);
+console.log(eventTarget.classList.remove('classList'));
+console.log(eventTarget.classList);
+```
+
+<img src="https://user-images.githubusercontent.com/22424891/127732341-2a48a7af-ef45-49d6-90f4-d46f480d276d.png" height="150px" />
