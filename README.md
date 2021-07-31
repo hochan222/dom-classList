@@ -82,3 +82,19 @@ console.log(eventTarget.classList);
 ```
 
 <img src="https://user-images.githubusercontent.com/22424891/127732421-bc1882ca-b65c-43ef-a6c9-6242745d5a5a.png" height="150px" />
+
+## DOMTokenList.replace()
+
+```html
+<div class="classList      a    v    c">Class List</div>
+```
+
+```js
+const eventTarget = document.querySelector(".classList");
+
+console.log(eventTarget.classList);
+console.log(eventTarget.classList.replace('classList', 'holee'));
+console.log(eventTarget.classList);
+```
+
+<img src="https://user-images.githubusercontent.com/22424891/127732471-8f8cf3f7-a071-4120-9ddd-9f02338592d6.png" height="150px" />
