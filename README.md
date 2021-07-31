@@ -3,10 +3,22 @@
 ## DOMTokenList.classList
 
 ```html
-<div class="classList">Class List</div>
+<div class="classList a b c">Class List</div>
+
+```js
+console.log(document.querySelector(".classList").classList);
+console.log(document.querySelector(".classList").classList.value);
+console.log(document.querySelector(".classList").classList.length);
 ```
 
-<img src="https://user-images.githubusercontent.com/22424891/127731956-87f85cb7-4ccf-454d-b3c5-521480bc7cac.png" height="150px" />
+### DOMTokenList.classList.value
+
+DOMTokenList.classList.value는 classList를 DOMString으로 반환하거나 classList를 지우고 지정된 값으로 설정할 수 있다.
+### DOMTokenList.classList.length (읽기 전용 속성)
+
+DOMTokenList.classList.length는 객체에 저장된 객체 수를 반환한다.
+
+<img src="https://user-images.githubusercontent.com/22424891/127732628-2a0c2abc-c6f5-4d27-b0cc-43f606da00bc.png" height="150px" />
 
 ## DOMTokenList.add()
 
