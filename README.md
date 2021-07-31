@@ -20,6 +20,8 @@ DOMTokenList.classList.length는 객체에 저장된 객체 수를 반환한다.
 
 <img src="https://user-images.githubusercontent.com/22424891/127732628-2a0c2abc-c6f5-4d27-b0cc-43f606da00bc.png" height="150px" />
 
+DOMTokenList는 읽기전용이다. 아래 메소드들을 이용해서 수정하자.
+
 ## DOMTokenList.add()
 
 add 메소드는 class 이름 사이의 공백을 제거해준다.
